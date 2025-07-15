@@ -7,15 +7,20 @@ import Copyright from '../components/Copyright'
 
 const LandingPage = () => {
   return (
-    <div>
-      <p>
+    <>
+    <div className='main'>
+      
         <Navbar/>
         <MainBanner />
         <WorkoutComp />
         <BannerThree />
-        <Copyright />
-      </p>
+    
+      
       </div>
+      <div className="copyright">
+          <Copyright />
+      </div>
+    </>
   )
 }
 

@@ -2,34 +2,56 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 body{
     background-color: beige;
     width: 80%;
     margin: 0 auto;
+
+}
+
+.main{
+    height: 95vh;
 }
 
 
 .navbar{
     display: flex;
     flex-direction: row;
-    
+    background-color : #333333;  /*#3e2f23;*/
     justify-content: space-between;
     /* border: 1px solid black; */
+    color: #ffffff;
+    height: 50px;
+    
 }
 
 .logo{
     /* border: 2px solid red; */
     margin-left: 30px;
-    padding-top: 25px;
+    padding-top: 10px;
+    
+}
+.logo-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-link.active{
+
+    color:burlywood
 }
 
 .additionalnavtitles{
 
     display: flex;    
     flex-direction: row;
+    align-items: center;
     margin-right: 30px;
-    padding-top: 18px;
+    /* padding-top: 15px; */
+    height: 100%;
+
 }
 
 .title{
@@ -110,4 +132,93 @@ body{
 
 .copyright{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color : #333333;  
+    color: #ffffff
+    ;
+    
+
+}
+
+/* .choose{
+    display: flex;
+    justify-content: flex-end;
+    
+    
+} */
+
+.choose button{
+    height: 40px;
+    background-color: grey;
+    color: white; 
+    opacity: 0.6;
+}
+
+.btn{
+    margin: 10px;
+    margin-left: 0px;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid white;
+}
+
+
+/* .btn:active, .btn:focus, .btn:hover{
+    background-color:#333333;
+    color: #ffffff;
+    opacity: 1;
+} */
+
+.btn.selected{
+    background-color:#333333;
+    color:burlywood;
+    opacity: 1;
+}
+
+.maincontainer{
+    /* border: 1px solid red; */
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.profilepic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    align-items: center;
+    width: 100%;
+
+}
+
+.pic{
+    /* width: 50%; */
+    /* border: 1px solid red; */
+    
+}
+
+.maincontainer img{
+    height: 600px;
+
+    /* border-radius: 50%; */
+}
+
+.desc{
+    width: 40%;
+    /* border: 1px solid red; */
+    height: 500px;
+    display: flex;
+
+    align-items: center;
+}
+
+.desc p{
+    font-size: 1.5rem;
+    font-style: italic;
 }

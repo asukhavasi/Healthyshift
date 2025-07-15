@@ -13,8 +13,17 @@ const BannerThree = () => {
         </div>
         <div className="contactform">
             <h2>Contact Form:</h2>
-            <p>Firstname:</p>
-            <p>LastName:</p>
+            <label for="firstName">FirstName: </label>
+            <input type="text" className='firstName' placeholder='enter your First Name'/> 
+            
+            
+            <label for="lastName">LastName: </label>
+            <input type="text" className='lasttName' placeholder='enter your Last Name'/>
+            <br />
+            <label for="emailId">Email: </label>
+            <input type="email" id='emailId' placeholder='Email Address...' />
+
+            
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor provident consequatur quam? Modi doloribus odit similique repellendus corrupti obcaecati fuga adipisci officiis, dolorum expedita, sunt nulla magni earum! Itaque, iure?</p>
             <button type='submit'>Submit</button>
         </div>
