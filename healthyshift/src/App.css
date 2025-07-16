@@ -99,7 +99,33 @@ body{
 
 .workout{
     width: 50%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction:row;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.workout-list{
+    width: 50%;
+}
+.workout-list ul{
+    list-style-type: none;
+    /* border: 1px solid black; */
+    height: 100%;
+    
+}
+.testimony{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+hr{
+    width: 5px;
+    background-color: #333333;
 }
 
 .banner3{
@@ -221,4 +247,39 @@ body{
 .desc p{
     font-size: 1.5rem;
     font-style: italic;
+}
+
+.contactform{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    height: 100%;
+}
+
+.frm{
+    height:40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    /* outline: none; */
+    border: none;
+    background-color: grey;
+    color: #ffffff;
+}
+
+.frm::placeholder{
+    color: #ffffff;
+    
+}
+
+.sub-btn{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+
+.submit-wrap{
+    display: flex;
+    justify-content: flex-end;
 }

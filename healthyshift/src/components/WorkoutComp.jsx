@@ -19,10 +19,19 @@ const WorkoutComp = () => {
         </div>
 
         <div className='workout'>
+            <div className="workout-list">
+              <ul>
                 <li>Workout</li>
                 <li>GYM</li>
                 <li>Activity</li>
                 <li>Sports</li> 
+              </ul>
+            </div>
+            <hr />
+            <div className="testimony">
+              <h3>Testimony:</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi est nesciunt unde perferendis ea vero molestias alias sit eaque, at voluptatem, corporis repellendus magni quasi. Accusantium laboriosam quibusdam minima ipsum.</p>
+            </div>
         </div>
     </div>
     </>    

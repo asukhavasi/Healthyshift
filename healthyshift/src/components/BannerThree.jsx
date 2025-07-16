@@ -13,19 +13,28 @@ const BannerThree = () => {
         </div>
         <div className="contactform">
             <h2>Contact Form:</h2>
-            <label for="firstName">FirstName: </label>
-            <input type="text" className='firstName' placeholder='enter your First Name'/> 
-            
-            
-            <label for="lastName">LastName: </label>
-            <input type="text" className='lasttName' placeholder='enter your Last Name'/>
-            <br />
-            <label for="emailId">Email: </label>
-            <input type="email" id='emailId' placeholder='Email Address...' />
+            {/* <hr /> */}
+            <div className="form">
+              <form >
+                {/* <label className='name form' for="firstName">FirstName: </label> */}
+                <input type="text" className='frm' placeholder='First Name....'/> 
+                <br />
+                
+                {/* <label className='name form' for="lastName">LastName: </label> */}
+                <input type="text" className='frm' placeholder='Last Name....'/>
+                <br />
+                {/* <label for="emailId">Email: </label> */}
+                <input type="email" className='frm' placeholder='Email Address....' />
+                <br />
+                {/* <label for="description">Description:</label> <br /> */}
+                <textarea className='frm' cols='50' placeholder='Description....'></textarea> 
+                <br />
+                <div className="submit-wrap">
+                  <button  type='submit' className='sub-btn'>Submit</button>
+                </div>
 
-            
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor provident consequatur quam? Modi doloribus odit similique repellendus corrupti obcaecati fuga adipisci officiis, dolorum expedita, sunt nulla magni earum! Itaque, iure?</p>
-            <button type='submit'>Submit</button>
+              </form>
+            </div>
         </div>
     </div>
     </>
